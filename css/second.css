@@ -1,0 +1,550 @@
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+@import "https://fonts.googleapis.com/css?family=Alegreya+Sans";
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    /*font-size: 1em;*/
+    font-size: 12px;
+    /*background-color: #242B3B;*/
+    background-color: #151827;
+}
+
+/*p {
+    font-size: 1.5em;
+    line-height: 1.5em;
+}*/
+
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #ccc; 
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0 auto;
+}
+
+p{
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 160%;
+    line-height: 145%;
+    padding: 1%;
+    text-indent: 2%;
+    text-align: justify;
+    color: white;
+}
+
+h1 {
+    font-size: 190%;
+    line-height: 155%;
+    font-weight: 500;
+    text-align: justify;
+    padding-left: 10px;
+    /*color: #B0522A;*/
+    color: #979795;
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 240%;
+    line-height: 155%;
+    font-weight: 500;
+    text-align: justify;
+    text-transform: uppercase;
+    padding-left: 10px;
+    color: white;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: white;
+}
+
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+.tiempo {
+    padding: 0;
+    margin: 0;
+    font-size: 180%;
+}
+
+
+/* Barra de arriba con el icono y el menu */
+#banner-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 0 0 0; 
+}
+
+#menu-header {
+    width: 100%;
+    height: 70px;
+    top: 0;
+    left: 0;
+    margin-bottom: 0;
+
+}
+
+#logo {
+    margin: 10px;
+    margin-top: 6px;
+    float: left;
+    width: 150px;
+    height: 50px;
+}
+
+#nav-top {
+    float: right;
+    padding: 10px 20px 0px 0px;    
+}
+
+#menu-icon {
+    display: hidden;
+    width: 40px;
+    height: 40px;
+    background: url(img/menu_mobile.png) center;
+}
+
+nav ul li {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 200%;
+    display: inline-block;
+    float: left;
+    padding: 10px;
+}
+
+nav ul li a {
+    color: silver;
+}
+/*-- Fin Nav --*/
+
+/*-- Start Footer --*/
+footer {
+    /*position: relative;*/
+    background-color: black;
+    text-align: center;
+}
+#texto-footer {
+    color: silver;
+    font-size: 110%; 
+    text-align: center;
+}
+
+#nav-botom ul {
+    padding-top: 15px; 
+}
+#nav-botom ul li {
+    float: none;
+    font-size: 150%;
+}
+
+#copy-separator {
+    border-top: 0.1px solid silver;
+}
+
+.autor {
+    padding-left: 10px; 
+}
+
+/* Secciones */
+section {
+    padding: 25px; 
+}
+
+article {
+    background-color: rgba(0,0,0,0.60);
+}
+
+hr#seccion-separador{
+    /*display: block;*/
+    margin-left: 2%;
+    margin-right: 2%;
+    align-self: center;
+    height: 1px;
+    border: 0;
+    border-top: 9px solid #B59042; 
+    padding: 0;
+}
+
+
+/* Footer */
+ol {
+    text-align: left;
+    margin-left: 25px;
+    color: white;
+}
+
+.link a{
+    color: #B0522A;
+}
+
+.link a:hover{
+    color: #B59042;
+}
+
+.link a:visited {
+    color: silver;
+}
+
+
+/*-- Social Menu --*/
+.fa {
+    padding: 20px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 90%;
+}
+
+.fa:hover {
+    color: white;
+}
+
+.fa-facebook {
+  color: silver;
+}
+
+.fa-twitter {
+  color: silver;
+}
+
+.fa-instagram {
+  color: silver;
+}
+
+.fa-tumblr {
+  color: silver;
+}
+
+.fa-youtube {
+  color: silver;
+}
+
+.fa-google {
+  color: silver;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    p {
+        font-size: 130%;
+    }
+    h2 {
+        font-size: 150%;
+    }
+    /*header {
+        height: 80px;
+    }*/
+    #logo {
+        margin: 15px 0 20px 10px;
+    }
+
+    #menu-icon {
+        display: inline-block;
+    }
+
+    nav:hover ul {
+        display: block;
+    }
+
+    nav ul, nav:active ul {
+        display: none;
+        z-index: 1000;
+        position: absolute;
+        padding: 20px;
+        background: white;
+        border: 1px solid darkgrey;
+        right: 20px;
+        width: 50%;
+        border-radius: 3px 0 3px 3px;
+        opacity: .95;
+    }
+
+    nav li {
+        text-align: center;
+        width: 100%;
+    }
+}
